@@ -74,29 +74,29 @@ public class LEDibActivity extends Activity implements OnSeekBarChangeListener,
 		
 	}
 
-	@Override
+	//@Override
 	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 		// buttonView.toggle();
 		mLed.setOn(buttonView.isChecked());
 	}
 
-	@Override
+	//@Override
 	public void onProgressChanged(SeekBar seekBar, int progress,
 			boolean fromUser) {
 		mLed.setIntence(progress);
 	}
 
-	@Override
+	//@Override
 	public void onStartTrackingTouch(SeekBar seekBar) {
 
 	}
 
-	@Override
+	//@Override
 	public void onStopTrackingTouch(SeekBar seekBar) {
 
 	}
 
-	@Override
+	//@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.button1:
@@ -222,26 +222,26 @@ public class LEDibActivity extends Activity implements OnSeekBarChangeListener,
 				this.mSwitcher.setOnCheckedChangeListener(this);
 			}
 
-			@Override
+			//@Override
 			public void onProgressChanged(SeekBar paramSeekBar, int paramInt,
 					boolean paramBoolean) {
 				this.mLedView.setIntence(paramInt);
 				getItem(getId()).setProgress(paramInt);
 			}
 
-			@Override
+			//@Override
 			public void onStartTrackingTouch(SeekBar paramSeekBar) {
 				// TODO Auto-generated method stub
 
 			}
 
-			@Override
+			//@Override
 			public void onStopTrackingTouch(SeekBar paramSeekBar) {
 				// TODO Auto-generated method stub
 
 			}
 
-			@Override
+			//@Override
 			public void onClick(View paramView) {
 				switch (paramView.getId()) {
 				case R.id.button1:
@@ -260,7 +260,7 @@ public class LEDibActivity extends Activity implements OnSeekBarChangeListener,
 
 			}
 
-			@Override
+			//@Override
 			public void onCheckedChanged(CompoundButton paramCompoundButton,
 					boolean paramBoolean) {
 				this.mLedView.setOn(paramBoolean);

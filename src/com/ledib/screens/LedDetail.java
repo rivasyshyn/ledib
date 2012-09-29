@@ -81,7 +81,7 @@ public class LedDetail extends Activity implements OnCheckedChangeListener,
 		((TextView) findViewById(R.id.textView1)).setText(mLed.getName());
 	}
 
-	@Override
+	//@Override
 	public void onProgressChanged(SeekBar seekBar, int progress,
 			boolean fromUser) {
 		// TODO Auto-generated method stub
@@ -90,19 +90,19 @@ public class LedDetail extends Activity implements OnCheckedChangeListener,
 		mProgress.setText(Integer.toString(progress) + "%");
 	}
 
-	@Override
+	//@Override
 	public void onStartTrackingTouch(SeekBar seekBar) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	//@Override
 	public void onStopTrackingTouch(SeekBar seekBar) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	//@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
@@ -119,7 +119,7 @@ public class LedDetail extends Activity implements OnCheckedChangeListener,
 		}
 	}
 
-	@Override
+	//@Override
 	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 		// TODO Auto-generated method stub
 		mLedView.setOn(buttonView.isChecked());

@@ -34,7 +34,8 @@ public class MainScreen extends Activity {
 		mGrid = (GridView) findViewById(R.id.tbl);
 		mGrid.setAdapter(new AppsAdapter(this, LedibApp.getInstance()
 				.restoreState()));
-
+		//animation initialization
+		
 	}
 
 	public static class AppsAdapter extends BaseAdapter implements
@@ -138,7 +139,7 @@ public class MainScreen extends Activity {
 
 		
 
-		@Override
+		//@Override
 		public void onClick(View v) {
 			if (v.getTag() instanceof ViewHolder) {
 				((MainScreen) mContext).startActivityForResult(new Intent(

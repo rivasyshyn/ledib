@@ -9,6 +9,7 @@ import com.ledib.views.LedView;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -33,6 +34,7 @@ public class LedDetail extends Activity implements OnCheckedChangeListener,
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.led_line);
+		Log.i(LedibApp.TAG, this.getClass().getName() + " onCreate");
 		if (getIntent().getExtras() == null) {
 			// error code
 		} else {

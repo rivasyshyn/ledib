@@ -38,6 +38,7 @@ public class LEDibActivity extends Activity implements OnSeekBarChangeListener,
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.leds_list);
+		Log.i(LedibApp.TAG, this.getClass().getName() + " onCreate");
 		// init();
 		requestLeds();
 		initList();

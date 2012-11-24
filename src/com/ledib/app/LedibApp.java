@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Application;
+import android.util.Log;
 
 import com.ledib.model.LedItem;
 
@@ -11,12 +12,18 @@ public class LedibApp extends Application {
 
 	private static LedibApp INSTANCE;
 	private List<LedItem> mLeds;
-
+	public static final String TAG = "SS";
+	
+	public LedibApp(){
+		Log.i(TAG, "app instance");
+	}
+	
 	@Override
 	public void onCreate() {
 		super.onCreate();
 		//initApp();
 		INSTANCE = this;
+		Log.i(TAG, "app onCreate");
 	}
 
 	public static LedibApp getInstance() {

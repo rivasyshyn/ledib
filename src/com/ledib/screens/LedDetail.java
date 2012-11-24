@@ -9,7 +9,7 @@ import com.ledib.views.LedView;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
+
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -34,7 +34,7 @@ public class LedDetail extends Activity implements OnCheckedChangeListener,
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.led_line);
-		Log.i(LedibApp.TAG, this.getClass().getName() + " onCreate");
+
 		if (getIntent().getExtras() == null) {
 			// error code
 		} else {
@@ -83,7 +83,9 @@ public class LedDetail extends Activity implements OnCheckedChangeListener,
 		((TextView) findViewById(R.id.textView1)).setText(mLed.getName());
 	}
 
-	//@Override
+
+	@Override
+
 	public void onProgressChanged(SeekBar seekBar, int progress,
 			boolean fromUser) {
 		// TODO Auto-generated method stub
@@ -92,19 +94,25 @@ public class LedDetail extends Activity implements OnCheckedChangeListener,
 		mProgress.setText(Integer.toString(progress) + "%");
 	}
 
-	//@Override
+
+	@Override
+
 	public void onStartTrackingTouch(SeekBar seekBar) {
 		// TODO Auto-generated method stub
 
 	}
 
-	//@Override
+
+	@Override
+
 	public void onStopTrackingTouch(SeekBar seekBar) {
 		// TODO Auto-generated method stub
 
 	}
 
-	//@Override
+
+	@Override
+
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
@@ -121,7 +129,9 @@ public class LedDetail extends Activity implements OnCheckedChangeListener,
 		}
 	}
 
-	//@Override
+
+	@Override
+
 	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 		// TODO Auto-generated method stub
 		mLedView.setOn(buttonView.isChecked());

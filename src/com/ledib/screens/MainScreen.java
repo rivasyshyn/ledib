@@ -7,7 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -28,7 +28,7 @@ public class MainScreen extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		Log.i(LedibApp.TAG, this.getClass().getName() + " onCreate");
+
 		init();
 	}
 
@@ -36,8 +36,7 @@ public class MainScreen extends Activity {
 		mGrid = (GridView) findViewById(R.id.tbl);
 		mGrid.setAdapter(new AppsAdapter(this, LedibApp.getInstance()
 				.restoreState()));
-		//animation initialization
-		
+
 	}
 
 	public static class AppsAdapter extends BaseAdapter implements
@@ -141,7 +140,9 @@ public class MainScreen extends Activity {
 
 		
 
-		//@Override
+
+		@Override
+
 		public void onClick(View v) {
 			if (v.getTag() instanceof ViewHolder) {
 				((MainScreen) mContext).startActivityForResult(new Intent(

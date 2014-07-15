@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="D:\PROJECTS\homy\ledib\app\src\main\res" >
+            <file
+                name="ic_launcher"
+                path="D:\PROJECTS\homy\ledib\app\src\main\res\drawable-hdpi\ic_launcher.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="D:\PROJECTS\homy\ledib\app\src\main\res\drawable-ldpi\ic_launcher.png"
+                qualifiers="ldpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="D:\PROJECTS\homy\ledib\app\src\main\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="D:\PROJECTS\homy\ledib\app\src\main\res\drawable-xhdpi\ic_launcher.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="leds_list"
+                path="D:\PROJECTS\homy\ledib\app\src\main\res\layout\leds_list.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="led_line"
+                path="D:\PROJECTS\homy\ledib\app\src\main\res\layout\led_line.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="main"
+                path="D:\PROJECTS\homy\ledib\app\src\main\res\layout\main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="tile"
+                path="D:\PROJECTS\homy\ledib\app\src\main\res\layout\tile.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="D:\PROJECTS\homy\ledib\app\src\main\res\values\strings.xml"
+                qualifiers="" >
+                <string name="app_name" >LEDib
+                </string>
+                <string name="hello" >Hello World, LEDibActivity!
+                </string>
+            </file>
+        </source>
+        <source path="D:\PROJECTS\homy\ledib\app\build\generated\res\rs\debug" />
+        <source path="D:\PROJECTS\homy\ledib\app\build\generated\res\generated\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="D:\PROJECTS\homy\ledib\app\src\debug\res" />
+    </dataSet>
+
+</merger>

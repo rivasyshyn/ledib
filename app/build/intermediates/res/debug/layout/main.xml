@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tbl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:columnWidth="100dp"
+    android:gravity="center_horizontal"
+    android:horizontalSpacing="4dp"
+    android:numColumns="auto_fit"
+    android:stretchMode="none"
+    android:verticalSpacing="4dp" >
+
+</GridView><!-- From: file:/D:/PROJECTS/homy/ledib/app/src/main/res/layout/main.xml -->
